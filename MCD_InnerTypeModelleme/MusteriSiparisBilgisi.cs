@@ -8,6 +8,17 @@ namespace MCD_InnerTypeModelleme
 {
    public class MusteriSiparisBilgisi
     {
+        public string siparisNumarasi { get; set; }
+        public Urun[] urunler;
 
+        public MusteriSiparisBilgisi()
+        {
+            urunler = new Urun[2];
+        }
+
+        public void MusteriSiparisBilgisiTestMetot()
+        {
+            Console.WriteLine("MusteriSiparisBilgisiTestMetot");
+        }
     }
 }
